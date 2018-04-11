@@ -1,0 +1,65 @@
+<style>
+    div {
+        width: 50px;
+        padding: 50px;
+        background: gold;
+        text-align: center;
+    }
+    .add {
+        -webkit-animation: shake 0.1s ease-in-out 0.1s  alternate;
+    }
+
+    @-webkit-keyframes shake {
+        from {
+            -webkit-transform: rotate(20deg);
+        }
+        to {
+            -webkit-transform-origin:center center;
+            -webkit-transform: rotate(-20deg);
+        }
+    }
+
+    @-moz-keyframes shake {
+        from {
+            -moz-transform: rotate(10deg);
+        }
+        to {
+            -moz-transform-origin:center center;
+            -moz-transform: rotate(-10deg);
+        }
+    }
+    @-ms-keyframes shake {
+        from {
+            -ms-transform: rotate(10deg);
+        }
+        to {
+            -ms-transform-origin:center center;
+            -ms-transform: rotate(-10deg);
+        }
+    }
+    @-o-keyframes shake {
+        from {
+            -o-transform: rotate(10deg);
+        }
+        to {
+            -o-transform-origin:center center;
+            -o-transform: rotate(-10deg);
+        }
+    }
+    @keyframes shake {
+        from {
+            transform: rotate(10deg);
+        }
+        to {
+            transform-origin:center center;
+            transform: rotate(-10deg);
+        }
+    }
+</style>
+<div onclick="add()">Hello</div>
+
+<script type="text/javascript">
+    function add() {
+        document.getElementsByTagName("div")[0].classList.add("add");
+    }
+</script>
